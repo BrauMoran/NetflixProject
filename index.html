@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/9c0bd3dd32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Barra navegación -->
+    <!-- Meter buscador y menu en header-->
+    <header>
+        <nav>
+            <!-- Logo de Netflix -->
+            <img class="logo" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="Logo netflix">
+            <!-- Menu superior -->
+            <ul>
+                <li>Inicio</li>
+                <li>Series</li>
+                <li>Peliculas</li>
+                <li>Novedades Populares</li>
+                <li>Mi lista</li>
+            </ul>
+            <!-- Barra de búsqueda -->
+            <section class="búsqueda">
+                <span><img  id="lupa-img" src="https://credicelu.net/tienda/wp-content/uploads/2019/10/lupa-blanca.png" alt="Ícono de búsqueda"></span>
+                <input type="text" placeholder="Títulos, personas, géneros...">
+            </section>
+            <!-- Sección de Niños -->
+            <p class="nav-list">Niños</p>
+            <!-- Ícono de Notificaciones -->
+            <span><img class="nav-img" src="https://i.ibb.co/8jmyjVg/bell-2.png" alt=""></span>
+            <!-- Perfil -->
+            <img class="nav-img" src="https://occ-0-891-114.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeejl5K5m5X89-zGMTGwJpgBHWBDoeq0GBckfW0ozDQBUfsbEdB8gpxl6Ix18UfRtFZboYvFezfogNFHoiOd-kNukJ2d.png?r=dd1" alt="">
+            <img class="nav-img" src="flechita.png" alt="">
+        </nav>
+    </header>
+    <main>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Peaky Blinders</h3>
+				<p class="descripcion">
+					Gran Bretaña vive la posguerra. Los soldados regresan, se acuñan nuevas revoluciones y nacen bandas criminales en una nación agitada. En Birmingham, una pandilla de gánsters callejeros asciende hasta convertirse en los reyes de la clase obrera.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</div>
+
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h4>Continuar viendo contenido de Braulio</h4>
+			</div>
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQNaoc8dcgG_uRDev0Iw3Ii17zDDUOCa0INUZsOaWDn-oNmtRc0F7fJiSOJaIT7dNDjdxN2DIU7jK3Lj66KZ4Z5E53BIdM39RfXb2eqOz_r15p9wzYhcoy98H0LN.jpg?r=05b" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABefjcB9llDgRRobuRUcv6wTRmVLJSPqBhRC4eSdx2NMzUqPsvzBAoZYNgVtS2aLD0nP5ekd7mA3jF3wJJeHtiXBQNxg.jpg?r=711" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYBUBcTanu5Q7MnbMlOhJDUSxZGa6Lg03cM4FVVPlxFea7EVb-prWi2ZeuecYdI093tIj4dJKTSDLTSOJNHQr2e-W9cfaB1Vl1jFkxXrbTT9OCBk3W_m6KSic7BD.jpg?r=280" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWV2vj48WYgkzelAYSNqBWCwBH3Twy89nMKFPccGX_ybt9cwsQtnS7o5QJ1l0InEGrLz8AlBIVN5Cnlj55TrMSj5PnUW_TfQxLgktss8i8Kkc3kRTRv_BxBv-fyG.jpg?r=6c0" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZ1P8g9ZAXsok_X0geKeIY3gfRPDYbRs_srsc3y_ks44wkrrt_0BWQZen9Jp46uZ_9sXB2ek7P2tMdAQceQJ-NHq9uvpN4Z1EsCgA7G7F7hwogZOvJiXIM6MAwto.jpg?r=b28" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTbTtRUgPIkL7t8oqtCTk-hMHPMdm_hy3-0LOiTu_kcGUg7thN7yKBysu7tJ864Kppp9cGMQmSbX0OkzQeUX0CvzY14vjhXGNu6yk1fcgVsdkt-elyvLUkRf7H02.jpg?r=162" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQWto4GtF07l5GQXkJNkqGJgeZfLnKaMR612sHDQnfGX1NI3xOkmkJkZcN9hWVtdRRRHuBrg7THBro5eL1LjDzHINuLIKIvTYm3SiX0-CZ6SYEy6yRv9d604Ow7v.jpg?r=106" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h4>Lanzamientos del último año</h4>
+			</div>
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSEl8LWx4tMJIM9Atm3F1Y49Uq6X01tnDe8gPA6d84-gQ767saz9z7Jxj9sFozuI8bcM2vlxeP9IPq3Aa7jxLlkMu8JGjizRLblNEcmD7g-Z2NeZvkvV5nWF9DmJ.jpg?r=393" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSS2Sp5P6QVtwo1jDvEwAAGo_V-qIfkeVz6ULsrt_JHq8gOky7vd1aAPDagOM1q_za6BxqpX8-S6TK_veSKONXDA9_0.jpg?r=432" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeIs4CgvcmB81TRyJeJHWfHgIEjSZN9mF1-rHwbcoMZmoGDNcWtESw0_KIcB0IKc-UYd5yE-nJVhoITVGXPtn7Y3KUI.jpg?r=c7b" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcyKn3GiAB78jKOad3Hwv8Laykn3NYPo4UqQtW2TwyeSiPRYwUpOyNQaFEY9DXuaOqqyNGPrZAOdLHe1dlKOA6Vj3K9F6l6F48gPTUjxLIgXfhrRRR9rEixOk4Lj.jpg?r=03a" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRaOHgiKdYpskqk2QavEEGhIxqIX4hr1veSXTHDWGPmbrQLq3t2S_mowvJ88kXIrFvaX-djBH0QFzgGjR_7YpzG04vE.jpg?r=ca5" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ8Opt6hwErnGBcWHCOjpp-zdnoYLhpcbz4oqTxpGb_G0RTBDsYSj-jg3RsNswKlHcj-QGNNQEN2CInLa1v974iUxzeSREUYtwDw9Z6mzctQFTzBj-Cx2bDQdEOX.jpg?r=e4e" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRSisa9NuwRbCsuj2EEqTxOVE3-aweTVRGfTMRK0wvWidsPe__zInaFdrBi69ngTkhri7jUe7yYnOr3qdGl4CnXuXQI.jpg?r=dd7" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h4>Tendencias</h4>
+			</div>
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZRwjXZLu7xMyoxctnfzTywZmJIhLHo7O4N_PLfpio7SB7Up5TyfuIFhVG_CY85PSZ2iqSJMLR9evESsTEkHC3qXMn8iVbpKRvNM3V92veNJTSSQFJ6S0C83ohyc.jpg?r=4d0" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSzx_xLC6cTuK48jce_2pw3fRzkhnauYBXQfxSj3mZTfNoZDxM-cSzh-smX9V3H2tj7gntjp2S5Wgru7eijAEnrdaVcqN3nIzmRgyuQ00LWGjnyNDm_GWv3HnznebEUX3AgMXFEFcXp28TUl2j2DMg4R_sPKaQ.jpg?r=ffa" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVlsTlqkjldw_WHIOurnyzEejdi6KWzPwZ52zEdvZFac2lglZzQfB5C-5m6Q5chSTO6iXpgrszfmJax53dSPaTnym_U.jpg?r=020" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVHUOJmTjLhLc6CDwpJaXOA3IoOiM1qo4WvLEoc4Zn1IIjr2jmmteI9Gnl8a2qcJ-YrZK7KWieXnggH5Rw4J6LoUCINgmy1qTWyXTrInMwN_BkNR7UMqJD6F0LBN.jpg?r=0dc" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY8ZAvp3XKEIVsTannoMPerjXKgGiRzcaTkKM2g3ieq_2rGKXUHp3BUIVwlNOHoGwp7USCj3smXuWwnWzPj2L1UOjSndhy78RjfkskZdiCydDUnOBV4Hrdt3YcufD3vL6A8h5nMcEoZEmj8OtVXqaKXMEBeLk_2igPVojnMesFe4g1duFjym-1Fb-5aBY86_5z2eXPJ5Ls7BLyFwYX-OjmiI.jpg?r=26b" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWunOjfNQholTq3hsgSO4oMyBWISYBHLsKoyELX2CkS2l2QXvIWAPe6CymGFP1U9te7cvw-LyBsvKYJu8nAdatLuDNaV4yQ7qYQFajgXVGmLujAjLxtcRDHQjXbn.jpg?r=724" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUyHp5bSzxxXfSYAt4cT7hfEvXOXuPc5sVyF38hpsPWOaYmD2L2LkbwEfWPdPK_0t-cnwHyhdbIZ6I3MWGe5_DNgCIOWa61atWkb9ytkb2JF5Gfj8seSC0GChwiY.jpg?r=4aa" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h4>Mi lista</h4>
+			</div>
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfBpbEx-_UI1utdZg1et7cy1RHPJbsZnQZb3FLXCHRsIr40P_Awp0lY1Rezu6YN5kA3YzsNuwi_vLPAi2spMI3Lsi5umLzSI4bh9euSZEQyLQZJNuOwOn1piV9IV.jpg?r=3ab" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTM9n-0wPHoVp6K9nmdmrX_xX8qcGEz3XhGaA6tpih9MBB2fEzdFDk3bht_eCiHou5b_yrzQO4gMv6_O-tOyIu2y8f9jGAqAtG6a0IC9YIKLuZKSM_QjNcpqnQqV.jpg?r=359" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY8S24cq6L3CgS5BzEOCWvr53UbanIv2bpMm_XYUZopPrIBUZVUTZ6WtRBBBYvk8vrutNLgLMjVi0PknM27SQEwWcfch1z7H_OOI21K10pEmP122CtNgRK9HzUk5.jpg?r=663" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWUVXSKhFylZ5EogcsL8kGYMP-uYy9OlyxPDF419e6TC7kdxFotVWjHSVa-0yaGeavD-1vebVO64Kqi9GZZji2JM9aWlWXOfOo7xmqDEiHVQknNFWa-rb20-q0du.jpg?r=8bc" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdeocwnR6XLQaGIGmQnKhpDBZXKgX4X3mJSWRt_Peid03Byv8qgm9Z74p5L2bSPTIoJYJ81mES-bj_vFmJJ47fr9Krc.jpg?r=0a3 alt="></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU5ZIcnuyxzaw7Gbapap3mZ6lo_A69qk6j5ACYyiVmO6fFOS3mT5To81XQQyb97bbiXg0ovai_hn3NDg0QN2OjQ_5XA.jpg?r=bb2" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXml8sJ__Yhyeb6ClO9SzB37CQsuGCsHmRIUYa98W9cyqZaWGXK8JlfPxbdRnf6bF2p90EMDm6POxTr4bket1YzrZGs.jpg?r=e24" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h4>Películas Recomendadas</h4>
+			</div>
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTrNf7sCXtGqUhv6HsJLmCwzijd6tNXScLcqqx8BsjwGJp18VhSTtsXv7ExPqW3_tNx5QCZ6D0CYgkHVKpV2FqKrn1s.jpg?r=587" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABV8AaDoboOqdEaEo-RiUID8SXw550Yv6tdGyzb0dTpX4RYetQ6ShqNb85n0yjseMCZ7t8QrijFDULpECcJ3iHnO56iQ.jpg?r=e15" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUrsMAKMADLSzGyPtR26O0ozQ65nEmsP9pElYCgZ5E9kDWIiEMvONG-odHH_RA_oerkD9h79zyLkXDDAXieEmjKsNI-HAgaZSX8-tsxjCO5ipFJ0o7ldLGA-EDP9.jpg?r=c9f" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABROG4bhlqdh1nHqgIfRct_AppY2DCfhVW38OSq017yANTw2a3rcFhpHQjRJB5YIzKfPMsBLij2sRWdL7Y-HUvbihOCk.jpg?r=066" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYY2ni6OPZ1L4ZuOKUakeEn9FAiFvuWYJ66qhwxr-FGZq_gyOfx5T8JShEOB1LrNWZSSdVB4PC51wwrxlemDrcGfMVItF-BvSxpyj640ldFf2wdNNHkomRcqoZwF.jpg?r=390" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbnq1SoN2pWG3ETCD3aXBe_QzG7C-x130Qxm_EH5T4cwmQKBvhkmUT0_MjJQ_S0pbhXTJMoMs-TaGz8Mv4NOk06AAss.jpg?r=5ef" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://occ-0-398-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaq4-acjzwEdDVbyAVJ2psG7dkMilzEtt4goZBiHm_D8omat_aw0MeEii29UTQge9-8GPyGmZmXMBtXcr5NjMaIsz8k.jpg?r=48d" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="social-media">
+			<!-- Íconos de redes sociales -->
+			<a href="https://www.facebook.com/Netflixmx" target="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com/NetflixLAT/" target="_blank" class="fa fa-instagram"></a>
+			<a href="https://twitter.com/netflixLAT" target="_blank" class="fa fa-twitter"></a>
+			<a href="https://www.youtube.com/channel/UC5ZiUaIJ2b5dYBYGf5iEUrA" target="_blank" class="fa fa-youtube"></a>
+		</div>
+		<div class="footer-list">
+			<ul class="listf">
+				<li>Audio y subtítulos</li>
+				<li>Prensa</li>
+				<li>Privacidad</li>
+				<li>Contáctanos</li>
+			</ul>
+			<ul class="listf">
+				<li>Audio descriptivo</li>
+				<li>Relaciones con inversionistas</li>
+				<li>Avisos legales</li>
+			</ul>
+			<ul class="listf">
+				<li>Centro de ayuda</li>
+				<li>Empleo</li>
+				<li>Preferencias de cookies</li>
+			</ul>
+			<ul class="listf">
+				<li>Tarjetas de regalo</li>
+				<li>Términos de uso</li>
+				<li>Información corporativa</li>
+			</ul>
+		</div>
+			<p id="codigo">Código de servicio</p>
+			<p>&#169 1997-2022 Netflix, Inc. By Braulio Morán</p>
+
+	</footer>
+</body>
+</html>
